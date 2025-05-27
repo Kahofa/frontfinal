@@ -1,0 +1,253 @@
+.profile-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.profile-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar-container {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-info-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-label {
+  font-weight: 600;
+  min-width: 100px;
+  color: var(--text-color);
+}
+
+.profile-value {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.profile-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.password-button {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.password-button:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.back-button {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #1a2530;
+  transform: translateY(-2px);
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+.profile-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.profile-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.profile-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.profile-avatar-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar-upload-label {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.avatar-upload-label:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.avatar-upload-input {
+  display: none;
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.profile-error {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.profile-success {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 20px;
+  }
+  
+  .profile-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-button {
+    width: 100%;
+  }
+  
+  .profile-form-actions {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .profile-avatar-container {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-avatar-edit {
+    margin-right: 40px;
+  }
+}
